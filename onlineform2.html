@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Online Form</title>
+                <style>
+                   
+                    body 
+                        {
+                            display: flex;justify-content: center;
+                            background: url('resumebootstrap_files/online form_template copy.jpg');
+                        }
+                    .container 
+                        {
+                        background: url('resumebootstrap_files/online form_template copy calm.jpg');
+                        opacity: 1; /* Makes the entire container 90% opaque */
+                        padding: 30px;
+                        border-radius: 20px;
+                        box-shadow:  5px rgba(220, 232, 93, 0.1);
+                        width: 500px;
+                        height:550px;
+                        
+                        }
+                        
+                    label 
+                        {
+                        font-weight: bold ;font-size:x-large;color: #1c16bfe5;
+                        }
+                    input, select 
+                        {
+                        width: 100%;
+                        padding: 8px;
+                        margin: 10px 0;
+                        border: 2px solid #1c16bfe5;
+                        border-radius: 5px;
+                        }
+                    button 
+                        {
+                        width: 100%;
+                        background-color: #ded93e;
+                        color:  #342df5e5;
+                        padding: 15px;
+                        border: 5px;
+                        border-color: #342df5e5 ;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-weight: bolder;
+                        font-size: larger;
+                        }
+                    button:hover 
+                        {
+                        background-color: #45ca62;
+                        }
+
+                </style>
+    </head>
+
+    <body>
+        <h1 style="text-align: left; color:  #112a9be5 ; margin: 2px 0; font-size:large;">Take One Step to get Success</h1><br><br>
+        <div class="container">
+            <h1 style="text-align: center; color:  #112a9be5 ; margin: 2px 0; font-size: xx-large;">CONTACT US</h1><br><br>
+
+    <form action="submit_form.php" method="post" style="max-width: 400px; margin: auto;">
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" required style="width: 100%; padding: 8px; margin: 5px 0;"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 8px; margin: 5px 0;"></textarea><br>
+
+    <button type="submit">Submit</button>
+</div>
+</form>
+
+</body>
+</html>
