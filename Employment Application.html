@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employment Application</title>
+  <link rel="stylesheet" href="./Employment Application_files/style.css">
+  <!--<link rel="stylesheet" href="C:\Users\admin\OneDrive\Desktop\form template\online form_template copy calm.jpg">-->
+</head>
+<body>
+
+  <h1>Employment Application</h1>
+
+  <div class="section">
+    <div class="section-title">Personal Information</div>
+    <div class="two-col">
+      <div>
+        <label>First Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <label>Street Address</label>
+    <input type="text">
+
+    <div class="two-col">
+      <div>
+        <label>City</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>State/Province</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <label>Birth Date</label>
+        <input type="date">
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input type="tel">
+      </div>
+    </div>
+
+    <label>Email</label>
+    <input type="email" placeholder="example@example.com">
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <label>School Name</label>
+    <input type="text">
+
+    <div class="two-col">
+      <div>
+        <label>Street Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>City</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <table>
+      <tbody><tr>
+        <th>No</th>
+        <th>Skill</th>
+        <th>Level</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+      </tr>
+    </tbody></table>
+  </div>
+
+  <div class="section">
+    <p>
+      By submitting this application, you agree to adhere to company policies
+      and provide accurate information throughout the employment process.
+    </p>
+
+    <div class="footer">
+      <div>
+        <label>Date</label>
+        <input type="text" placeholder="Month/Day/Year">
+      </div>
+
+      <div class="signature">
+        <label>Approval</label>
+        <div class="signature-box"></div>
+      </div>
+
+      <div class="signature">
+        <label>Your Name</label>
+        <div class="signature-box"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
